@@ -1,3 +1,3 @@
 #!/usr/bin/env python
 
-print ("It`s my greeter")
+print("It`s my greeter")
