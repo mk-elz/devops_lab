@@ -19,8 +19,8 @@ source  ~/.bashrc
 pyenv install  2.7.17
 pyenv install  3.7.5
 
-pyenv virtualenv 2.7.17env
-pyenv virtualenv 3.7.5env
+pyenv virtualenv 2.7.17 2.7.17env
+pyenv virtualenv 3.7.5 3.7.5env
 
 pyenv local 3.7.5env
 
