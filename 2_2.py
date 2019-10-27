@@ -44,8 +44,4 @@ else:
 
 a = int(aStr)
 b = int(bStr)
-print(a-b)
-
-
-
-
+print(a - b)
