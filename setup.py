@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="3task_comp_metrics",
-    scripts=[],
+    scripts=[3task_comp_metrics],
     packages=find_packages(),
     install_requires=['psutil'],
     version="1.0",

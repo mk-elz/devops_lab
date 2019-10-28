@@ -23,3 +23,10 @@ The information will be written to txt or json file(need to specify in config.js
           `pip install 3task_comp_metrics-1.0-py3-none-any.whl`
           
           
+#### Configuration
+
+Set config file conf.ini
+          
+          
+          Interval, Min. Defaul setting is 5 minutes.
+          Type of output file: txt or json
