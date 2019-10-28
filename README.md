@@ -30,3 +30,9 @@ Set config file conf.ini
           
           Interval, Min. Defaul setting is 5 minutes.
           Type of output file: txt or json
+          For example:
+          
+          [common]
+          output = json
+          interval = 5
+          
