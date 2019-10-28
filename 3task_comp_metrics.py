@@ -47,10 +47,10 @@ if outputType == 'json':
             'SNAPSHOT': str(i),
             'TIMESTAMP': timeStamp,
             'CPU': my.get_cpu(),
-            'MEM': my.get_mem()[0] + 'Mb',
-            'VMEM': my.get_mem()[1] + 'Mb',
-            'IO INFO': my.get_d_io() + 'Mb',
-            'NET INFO': my.get_n_io() + 'Mb'
+            'MEM, Mb': my.get_mem()[0],
+            'VMEM, Mb': my.get_mem()[1],
+            'IO INFO, Mb': my.get_d_io(),
+            'NET INFO, Mb': my.get_n_io()
         }, indent=4) + '\n'
         file = open('metrics-log.json', 'a')
         file.write(snapshotStr)
@@ -66,10 +66,10 @@ elif outputType == 'txt':
         snapshotStr = 'SNAPSHOT: ' + str(i) + ' | ' + \
                       'TIMESTAMP: ' + timeStamp + ' | ' + \
                       'CPU: ' + my.get_cpu() + ' | ' + \
-                      'MEM: ' + my.get_mem()[0] + 'Mb' + ' | ' + \
-                      'VMEM: ' + my.get_mem()[1] + 'Mb' + ' | ' + \
-                      'IO INFO: ' + my.get_d_io() + 'Mb' + ' | ' + \
-                      'NET INFO: ' + my.get_n_io() + 'Mb' + '\n'
+                      'MEM, Mb: ' + my.get_mem()[0] + ' | ' + \
+                      'VMEM, Mb: ' + my.get_mem()[1] + ' | ' + \
+                      'IO INFO, Mb: ' + my.get_d_io() + ' | ' + \
+                      'NET INFO, Mb: ' + my.get_n_io() + ' | ' + '\n'
         file = open('metrics-log.txt', 'a')
         file.write(snapshotStr)
         # file.write('\n')
