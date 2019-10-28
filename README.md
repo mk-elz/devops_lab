@@ -22,6 +22,7 @@ The information will be written to txt or json file(need to specify in config.js
           
           `pip install 3task_comp_metrics-1.0-py3-none-any.whl`
           
+          Please check execution permission on file.
           
 #### Configuration
 
@@ -36,3 +37,4 @@ Set config file conf.ini
           output = json
           interval = 5
           
+    
