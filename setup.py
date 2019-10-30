@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="3task_comp_metrics",
-    scripts=['3task_comp_metrics.py'],
+    name="task3_comp_metrics",
+    scripts=['task3_comp_metrics.py'],
     packages=find_packages(),
     install_requires=['psutil'],
     version="1.0",

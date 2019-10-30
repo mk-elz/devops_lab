@@ -35,6 +35,12 @@ class CompMetrics:
         return time_sleep, output_type
 
 
+try:
+    os.remove('metrics-log.json')
+    os.remove('metrics-log.txt')
+except OSError:
+    pass
+
 my = CompMetrics()
 if not (os.path.isfile('conf.ini')):
     print('\nError: Conf.ini don`t exist. Please see Readme.md and create file\n')
