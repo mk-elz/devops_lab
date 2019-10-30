@@ -1,9 +1,7 @@
 initList = []
-i = 1
 inputStep = input("Enter steps: ")
 stepCount = int(inputStep)
-while i <= stepCount:
-    i = i + 1
+for i in range(stepCount):
     N = input("Enter command and arguments: ").split()
     if N[0] == 'insert':
         initList.insert(int(N[1]), int(N[2]))
