@@ -11,8 +11,7 @@ print(xBinStr32)
 print(yBinStr32)
 i = 0
 hamDist = 0
-while i < 32:
+for i in range(32):
     if xBinStr32[i] != yBinStr32[i]:
         hamDist = hamDist + 1
-    i = i + 1
 print(hamDist)
